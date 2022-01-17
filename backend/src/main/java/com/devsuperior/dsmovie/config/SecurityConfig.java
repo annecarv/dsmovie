@@ -42,6 +42,3 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 }
 
-public class SecurityConfig {
-
-}
