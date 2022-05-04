@@ -11,29 +11,22 @@
 </head>
 
 <body>
-    <script type="application/javascript">
+  <script type="application/javascript">
+    window.tiledeskSettings =
+    {
+      projectid: "62719052b9a642001a941bdd"
+    };
 
-      window.Tiledesk('showCallout');
-
-
-      window.Tiledesk('open');
-
-      window.tiledeskSettings =
-      {
-        projectid: "62719052b9a642001a941bdd",
-        
-      };
-
-      (function (d, s, id) {
-        var w = window; var d = document; var i = function () { i.c(arguments); };
-        i.q = []; i.c = function (args) { i.q.push(args); }; w.Tiledesk = i;
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id; js.async = true;
-        js.src = "https://widget.tiledesk.com/v5/launch.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'tiledesk-jssdk'));
-    </script>
+    (function (d, s, id) {
+      var w = window; var d = document; var i = function () { i.c(arguments); };
+      i.q = []; i.c = function (args) { i.q.push(args); }; w.Tiledesk = i;
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id; js.async = true; js.src = "https://widget.tiledesk.com/v5/launch.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'tiledesk-jssdk'));
+  </script>
   <noscript>Você precisa habilitar o JavaScript para utilizar este app.</noscript>
   <div id="root"></div>
 </body>
