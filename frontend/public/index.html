@@ -11,52 +11,19 @@
 </head>
 
 <body>
-  <script type="application/javascript">
-  window.Tiledesk('onNewConversationComponentInit', function(event_data) {
-          const message = 'hello';
-          const recipientId = event_data.detail.newConvId;
-          const recipientFullname = 'Owner';
-          const type = 'text';
-          const metadata = {};
-          const attributes = {test:'test attributes', subtype: 'info'};
-          window.tiledesk.sendSupportMessage(
-              message,
-              recipientId,
-              recipientFullname,
-              type,
-              metadata,
-              attributes,
-          )
-      });
-
-      window.Tiledesk('onMessageCreated', function(event_data) {
-        var message = event_data.detail;
-        console.log("TRIGGER onMessageCreated -> ", message);
-    });
-    
-    window.tiledeskSettings =
-    {
-      projectid: "62719052b9a642001a941bdd",
-      themeColor: "#9eacf0",
-      baloonImage: "https://media-exp1.licdn.com/dms/image/C4E0BAQHUY_2uZMjchA/company-logo_200_200/0/1519900879173?e=1659571200&v=beta&t=s-cC5eMHURtOjppDG1iH9X5BhQ6ZZABDzcVDvM0xZ8g",
-      logoChat: "https://media-exp1.licdn.com/dms/image/C4E0BAQHUY_2uZMjchA/company-logo_200_200/0/1519900879173?e=1659571200&v=beta&t=s-cC5eMHURtOjppDG1iH9X5BhQ6ZZABDzcVDvM0xZ8g",
-      calloutTitle: "Olá, sou a Helen da Foregon!",
-      calloutMsg: "Como posso te ajudar?",
-      welcomeTitle: "Bem Vindo à Foregon",
-
-
-    };
-
-    (function (d, s, id) {
-      var w = window; var d = document; var i = function () { i.c(arguments); };
-      i.q = []; i.c = function (args) { i.q.push(args); }; w.Tiledesk = i;
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id; js.async = true; js.src = "https://widget.tiledesk.com/v5/launch.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'tiledesk-jssdk'));
-  </script>
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62712aabb0d10b6f3e706d09/1g250tc2b';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+     <!--End of Tawk.to Script-->
   <noscript>Você precisa habilitar o JavaScript para utilizar este app.</noscript>
   <div id="root"></div>
 </body>
