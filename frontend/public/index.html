@@ -42,6 +42,40 @@
       orders: {}
     };
   </script>
+  <script type="text/javascript">
+    var _support = _support || { 'ui': {}, 'user': {} };
+    _support.outbounds = _support.outbounds || [];
+    _support.outbounds.push({
+      id: "55001",
+      name: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. ",
+      message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. CUE",
+      sound: true,
+      transient: false,
+      botsEnabled: true,
+      enableCustomFields: false,
+      disableCueClick: false,
+      user: {
+        type: "team"
+      },
+      buttons: [
+        {
+          text: "Opa, vamos!",
+          url: "https://www.foregon.com/cartaodecredito/",
+        },
+        {
+          text: "Quero saber mais sobre!",
+          response: true
+        },
+      ],
+      rules: [
+        {
+          type: "timeOnSite",
+          op: "greaterThan",
+          value: "5s",
+        },
+      ],
+    });
+  </script>
   <div id="root"></div>
 </body>
 
