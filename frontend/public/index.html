@@ -14,6 +14,36 @@
   <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
   <script type="text/javascript">
     var _support = _support || { 'ui': {}, 'user': {} };
+    _support.outbounds = _support.outbounds || [];
+    _support.outbounds.push({
+      id: "55001",
+      name: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. ",
+      message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. ",
+      sound: true,
+      transient: false,
+      botsEnabled: false,
+      enableCustomFields: false,
+      disableCueClick: false,
+      user: {
+        type: "team"
+      },
+      buttons: [
+        {
+          text: "Opa, vamos!",
+          response: true
+        },
+      ],
+      rules: [
+        {
+          type: "timeOnSite",
+          op: "greaterThan",
+          value: "5s",
+        },
+      ],
+    });
+  </script>
+  <script type="text/javascript">
+    var _support = _support || { 'ui': {}, 'user': {} };
     _support['account'] = 'foregon';
     _support['ui']['contactMode'] = 'anonymous';
     _support['ui']['enableKb'] = 'false';
