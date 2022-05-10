@@ -11,13 +11,36 @@
 </head>
 
 <body>
-  <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
+  <<script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
   <script type="text/javascript">
     var _support = _support || { 'ui': {}, 'user': {} };
-    _support['account'] = '{{ foregon }}';
-  </script>
-  <script type="text/javascript">
-    _support['ui']['widget'] = true;
+    _support['account'] = 'foregon';
+    _support['ui']['contactMode'] = 'anonymous';
+    _support['ui']['enableKb'] = 'false';
+    _support['ui']['styles'] = {
+      widgetColor: 'rgba(16, 162, 197, 1)',
+      gradient: true,
+    };
+    _support['ui']['shoutboxFacesMode'] = "brand-avatar";
+    _support['ui']['shoutboxHeaderLogo'] = true;
+    _support['ui']['widget'] = {
+      displayOn: 'all',
+      allowBotProcessing: true,
+      label: {
+        text: '&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais.',
+        mode: "notification",
+        delay: 3,
+        duration: 30,
+        sound: true,
+      },
+      position: 'bottom-right',
+      mobilePosition: 'bottom-right'
+    };
+    _support['apps'] = {
+      faq: {"enabled":false},
+      recentConversations: {"enabled":false},
+      orders: {}
+    };
   </script>
   <noscript>Você precisa habilitar o JavaScript para utilizar este app.</noscript>
   <div id="root"></div>
