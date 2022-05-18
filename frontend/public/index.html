@@ -38,7 +38,8 @@
     };
     _support['apps'] = {
       faq: {"enabled":false},
-      recentConversations: {"header":"Recent Conversations - Teste modificar layout"},
+      recentConversations: {"enabled":false},
+      //recentConversations: {"header":"Recent Conversations - Teste modificar layout"}, config anterior antes do teste//
       orders: {}
     };
   </script>
@@ -47,11 +48,11 @@
     _support.outbounds = _support.outbounds || [];
     _support.outbounds.push({
       id: "55001",
-      name: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. ",
+      name: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais.   CUENAME",
       message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. CUE",
       sound: true,
       transient: false,
-      botsEnabled: false,
+      botsEnabled: true,
       enableCustomFields: false,
       disableCueClick: false,
       user: {
@@ -61,9 +62,6 @@
         {
           text: "Opa, vamos!",
           url: "https://www.foregon.com/cartaodecredito/",
-          color: 'rgba(151, 23, 196, 0.8)',
-          buttonColor: 'rgba(151, 23, 196, 0.8)',
-          cueColor: 'rgba(151, 23, 196, 0.8)',
         },
         {
           text: "Quero saber mais sobre!",
