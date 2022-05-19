@@ -49,7 +49,7 @@
     _support.outbounds.push({
       id: "55001",
       name: "CUE INICIAL",
-      message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. Clique aqui para saber mais. ",
+      message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. ",
       sound: true,
       transient: false,
       botsEnabled: true,
@@ -58,6 +58,12 @@
       user: {
         type: "team"
       },
+      buttons: [
+        {
+          text: " Clique aqui para saber mais!",
+          response: true
+        },
+      ],
       rules: [
         {
           type: "timeOnSite",
