@@ -11,63 +11,30 @@
 </head>
 
 <body>
-  <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
-  <script type="text/javascript">
-    var _support = _support || { 'ui': {}, 'user': {} };
-    _support['account'] = 'foregon';
-    _support['ui']['contactMode'] = 'anonymous';
-    _support['ui']['enableKb'] = 'false';
-    _support['ui']['styles'] = {
-      widgetColor: 'rgba(16, 162, 197, 1)',
-      gradient: true,
-    };
-    _support['ui']['shoutboxFacesMode'] = "brand-avatar";
-    _support['ui']['widget'] = {
-      img: 'https://yt3.ggpht.com/y-xoO73O4BczoDzVGH11-a3GpEuNa8SjrMd_N-p4nxJHTH9cK3galVKoxCULxHysfWuF3aBOyLQ=s900-c-k-c0x00ffffff-no-rj',
-      displayOn: 'all',
-      allowBotProcessing: true,
-      label: false,
-      position: {
-        bottom: '22px',
-        right: '22px'
-      },
-      mobilePosition: {
-        bottom: '22px',
-        right: '22px'
-      }
-    };
-    _support['apps'] = {
-      faq: { "enabled": false },
-      recentConversations: { "header": "Recent Conversations - Teste modificar layout" },
-      orders: {}
-    };
-  </script>
   <script type="text/javascript">
     var _support = _support || { 'ui': {}, 'user': {} };
     _support.outbounds = _support.outbounds || [];
     _support.outbounds.push({
-      id: "55001",
-      name: "CUE INICIAL",
-      message: "&#128075; Ol&#225;! Sou a Helen, especialista da Foregon. Acabei de encontrar o cart&#227;o ideal para voc&#234;. ",
+      id: "55754",
+      name: "Helen",
+      message: "Ol&#225;! Sou a Helen, especialista em produtos financeiros da Foregon.\n\n&#127873; Parab&#233;ns, voc&#234; acaba de ganhar uma consulta gratuita de Score!\n\n\n\n",
       sound: true,
       transient: false,
-      botsEnabled: true,
+      botsEnabled: false,
       enableCustomFields: false,
       disableCueClick: false,
       user: {
-        type: "team"
+        name: "Helen ",
+        avatarUrls: ["https://media-exp1.licdn.com/dms/image/C4D03AQHGl9BGPQxa8Q/profile-displayphoto-shrink_200_200/0/1634303448869?e=1658966400&v=beta&t=rh_ydAES5Mxk-6fUQG8726Tm8IO1PX3h-eA1wZP-5SQ"]
       },
       buttons: [
         {
-          text: " Clique aqui para saber mais!",
+          text: "Consultar gr&#225;tis",
           response: true
         },
-      ],
-      rules: [
         {
-          type: "timeOnSite",
-          op: "greaterThan",
-          value: "2s",
+          text: "Quero saber mais",
+          response: true
         },
       ],
     });
