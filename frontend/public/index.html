@@ -15,30 +15,37 @@
     var _support = _support || { 'ui': {}, 'user': {} };
     _support.outbounds = _support.outbounds || [];
     _support.outbounds.push({
-      id: "55754",
-      name: "Helen",
-      message: "Ol&#225;! Sou a Helen, especialista em produtos financeiros da Foregon.\n\n&#127873; Parab&#233;ns, voc&#234; acaba de ganhar uma consulta gratuita de Score!\n\n\n\n",
+      id: "56134",
+      name: "Helen - Voc&#234; acaba de ganhar uma consulta de score",
+      message: "Ol&#225;! Sou a Helen, especialista em produtos financeiros da Foregon.\n\n&#127873; Parab&#233;ns, voc&#234; acaba de ganhar uma consulta gratuita de Score!",
       sound: true,
       transient: false,
-      botsEnabled: false,
+      botsEnabled: true,
       enableCustomFields: false,
       disableCueClick: false,
       user: {
-        name: "Helen ",
-        avatarUrls: ["https://media-exp1.licdn.com/dms/image/C4D03AQHGl9BGPQxa8Q/profile-displayphoto-shrink_200_200/0/1634303448869?e=1658966400&v=beta&t=rh_ydAES5Mxk-6fUQG8726Tm8IO1PX3h-eA1wZP-5SQ"]
+        type: "brand"
       },
       buttons: [
         {
-          text: "Consultar gr&#225;tis",
+          text: "CONSULTAR GR&#193;TIS",
           response: true
         },
         {
-          text: "Quero saber mais",
+          text: "QUERO SABER MAIS",
           response: true
+        },
+      ],
+      rules: [
+        {
+          type: "timeOnSite",
+          op: "greaterThan",
+          value: "45s",
         },
       ],
     });
   </script>
+  
   <div id="root"></div>
 </body>
 
