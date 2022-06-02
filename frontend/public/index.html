@@ -43,7 +43,7 @@
     var _support = _support || { 'ui': {}, 'user': {} };
     _support.outbounds = _support.outbounds || [];
     _support.outbounds.push({
-      id: "56134",
+      id: "56200",
       name: "Helen - Voc&#234; acaba de ganhar uma consulta de score",
       message: "Ol&#225;! Sou a Helen, especialista em produtos financeiros da Foregon.\n\n&#127873; Parab&#233;ns, voc&#234; acaba de ganhar uma consulta gratuita de Score!",
       sound: true,
@@ -57,7 +57,7 @@
       buttons: [
         {
           text: "Consultar gr&#225;tis",
-          script: ""
+          url: "https://www.foregon.com/consulta-score-de-credito-gratis/",
         },
         {
           text: "Quero saber mais",
@@ -68,7 +68,7 @@
         {
           type: "timeOnSite",
           op: "greaterThan",
-          value: "45s",
+          value: "25s",
         },
       ],
     });
